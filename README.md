@@ -14,9 +14,14 @@ eg. `./spawn-terminal-with-command.sh "npm start"`
 ### With Location
 Use `-l` or `--location` to specify location to run new command in
 
-`./spawn-terminal-with-command.sh -l "<location>" "<command>"`
+eg. `./spawn-terminal-with-command.sh -l ~/Documents/AwesomeProject "npm start"`
+
+### Chaining Commands
+You may chain a blocking command like this:
+
+`./spawn-terminal-with-command.sh "npm start"; npx react-native run-ios`
 
 ### Help
 Use `-h` or `--help` flag to get help
 
-`./spawn-terminal-with-command.sh -l "<location>" "<command>"`
+`./spawn-terminal-with-command.sh -h
