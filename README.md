@@ -6,7 +6,7 @@ This tool is useful for chaining commands, involving some blocking commands that
 For example starting up metro-bundler before building and running a React Native application on iOS.
 
 # Usage
-## Basic Usage
+## Basic
 Run command in a new terminal in the current directory
 
 eg. `./spawn-terminal-with-command.sh "npm start"`
@@ -24,4 +24,4 @@ You may chain a blocking command like this:
 ## Help
 Use `-h` or `--help` flag to get help
 
-`./spawn-terminal-with-command.sh -h
+`./spawn-terminal-with-command.sh -h`
