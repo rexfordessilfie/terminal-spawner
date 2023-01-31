@@ -6,22 +6,26 @@ This tool is useful for chaining commands, involving some blocking commands that
 For example starting up metro-bundler before building and running a React Native application on iOS.
 
 # Usage
+First, run `bash setup.sh` to make the script executable.
+
+> Without this step, you will need to run the script with `bash terminal-spawner.sh` instead of just `terminal-spawner`. And you will need to provide permissions to the script every time you run it, with `chmod +x terminal-spawner.sh`.
+
 ## Basic
 Run command in a new terminal in the current directory
 
-eg. `./spawn-terminal-with-command.sh "npm start"`
+eg. `terminal-spawner "npm start"`
 
 ## With Location
 Use `-l` or `--location` to specify location to run new command in
 
-eg. `./spawn-terminal-with-command.sh -l ~/Documents/AwesomeProject "npm start"`
+eg. `terminal-spawner -l ~/Documents/AwesomeProject "npm start"`
 
 ## Chaining Commands
 You may chain a blocking command like this:
 
-`./spawn-terminal-with-command.sh "npm start"; npx react-native run-ios`
+`terminal-spawner "npm start"; npx react-native run-ios`
 
 ## Help
 Use `-h` or `--help` flag to get help
 
-`./spawn-terminal-with-command.sh -h`
+`terminal-spawner -h`
